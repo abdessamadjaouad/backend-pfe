@@ -1,0 +1,81 @@
+<!-- db/changelog-1.1-container.xml -->
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
+
+  <!-- Create Container Table -->
+    <changeSet id="1" author="your-name">
+    <createTable tableName="agent">
+      <column name="id" type="BIGINT">
+        <constraints primaryKey="true" nullable="false"/>
+      </column>
+        <column name="ref" type="VARCHAR(500)"/>
+        <column name="nom_utilisateur" type="VARCHAR(500)"/>
+        <column name="mot_de_passe" type="VARCHAR(500)"/>
+        <column name="nom" type="VARCHAR(500)"/>
+        <column name="prenom" type="VARCHAR(500)"/>
+        <column name="adresse" type="VARCHAR(500)"/>
+
+        <column name="entite_administrative_id" type="BIGINT">
+          <constraints nullable="false"/>
+        </column>
+        <column name="poste_id" type="BIGINT">
+          <constraints nullable="false"/>
+        </column>
+        <column name="plage_horaire_id" type="BIGINT">
+          <constraints nullable="false"/>
+        </column>
+
+    </createTable>
+  </changeSet>
+
+    <!-- Add foreign key constraint -->
+  <changeSet id="2" author="your-name">
+      <addForeignKeyConstraint
+              baseTableName="agent"
+              baseColumnNames="entite_administrative_id"
+              referencedTableName="entite_administrative"
+              referencedColumnNames="id"
+              constraintName="fk_agent_entite_administrative"/>
+      <addForeignKeyConstraint
+              baseTableName="agent"
+              baseColumnNames="poste_id"
+              referencedTableName="poste"
+              referencedColumnNames="id"
+              constraintName="fk_agent_poste"/>
+      <addForeignKeyConstraint
+              baseTableName="agent"
+              baseColumnNames="plage_horaire_id"
+              referencedTableName="plage_horaire"
+              referencedColumnNames="id"
+              constraintName="fk_agent_plage_horaire"/>
+
+  </changeSet>
+
+    <!-- Create Sequence for ContainerType -->
+  <changeSet id="3" author="your-name">
+    <createSequence sequenceName="agent_seq" startValue="1" incrementBy="1"/>
+  </changeSet>
+
+  <!-- Load Data from CSV -->
+  <changeSet id="4" author="your-name">
+    <loadData
+            file="classpath:/db/migration/data/Agent/Agent.csv"
+            tableName="agent">
+      <column name="id" type="NUMERIC"/>
+          <column name="ref" type="STRING"/>
+          <column name="nom_utilisateur" type="STRING"/>
+          <column name="mot_de_passe" type="STRING"/>
+          <column name="nom" type="STRING"/>
+          <column name="prenom" type="STRING"/>
+          <column name="adresse" type="STRING"/>
+        <column name="entite_administrative" type="BIGINT"/>
+        <column name="poste" type="BIGINT"/>
+        <column name="plage_horaire" type="BIGINT"/>
+    </loadData>
+  </changeSet>
+
+
+</databaseChangeLog>

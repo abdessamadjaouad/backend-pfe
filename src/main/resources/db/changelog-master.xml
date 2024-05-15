@@ -1,0 +1,22 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
+
+            <include file="classpath:db/migration/changelog/Agent/Agent.xml"/>
+        <include file="classpath:db/migration/changelog/Pointage/Pointage.xml"/>
+        <include file="classpath:db/migration/changelog/DemandeConge/DemandeConge.xml"/>
+        <include file="classpath:db/migration/changelog/Retard/Retard.xml"/>
+        <include file="classpath:db/migration/changelog/Service/EntiteAdministrative.xml"/>
+        <include file="classpath:db/migration/changelog/DemandeAbsence/DemandeAbsence.xml"/>
+        <include file="classpath:db/migration/changelog/BioManager/BadgeNfc.xml"/>
+        <include file="classpath:db/migration/changelog/Poste/RaisonDemandeConge.xml"/>
+        <include file="classpath:db/migration/changelog/Poste/Poste.xml"/>
+        <include file="classpath:db/migration/changelog/Conge/Conge.xml"/>
+        <include file="classpath:db/migration/changelog/heureSupplementaire/HeureSupplementaire.xml"/>
+        <include file="classpath:db/migration/changelog/Poste/RaisonDemandeAbsence.xml"/>
+        <include file="classpath:db/migration/changelog/Absence/Absence.xml"/>
+        <include file="classpath:db/migration/changelog/DemandeDocumentAdministratif/DemandeDocumentAdministratif.xml"/>
+        <include file="classpath:db/migration/changelog/plageHoraire/PlageHoraire.xml"/>
+
+</databaseChangeLog>

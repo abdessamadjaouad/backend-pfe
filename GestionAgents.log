@@ -1,0 +1,36 @@
+2024-05-15 08:45:14,417 INFO ma.zs.GestionAgents.GestionAgentsApplication [main] Starting GestionAgentsApplication using Java 21.0.3 with PID 15244 (C:\Users\abdoj\OneDrive\Desktop\backend-ms1\target\classes started by abdoj in C:\Users\abdoj\OneDrive\Desktop\backend-ms1)
+2024-05-15 08:45:14,485 INFO ma.zs.GestionAgents.GestionAgentsApplication [main] The following 1 profile is active: "dev"
+2024-05-15 08:45:43,445 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-15 08:45:44,082 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 603 ms. Found 21 JPA repository interfaces.
+2024-05-15 08:45:47,254 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8036 (http)
+2024-05-15 08:45:47,305 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2024-05-15 08:45:47,305 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.10]
+2024-05-15 08:45:47,890 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2024-05-15 08:45:47,890 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 32945 ms
+2024-05-15 08:45:49,083 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-15 08:45:49,441 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.2.5.Final
+2024-05-15 08:45:49,449 INFO org.hibernate.cfg.Environment [main] HHH000406: Using bytecode reflection optimizer
+2024-05-15 08:45:50,328 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2024-05-15 08:45:50,978 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-15 08:45:51,141 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-05-15 08:45:52,244 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f1fec57
+2024-05-15 08:45:52,250 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-05-15 08:45:52,591 WARN org.hibernate.dialect.Dialect [main] HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 5.7.0. Check the community dialects project for available legacy versions.
+2024-05-15 08:45:53,686 INFO org.hibernate.bytecode.internal.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2024-05-15 08:45:57,416 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-05-15 08:45:57,479 INFO org.hibernate.orm.connections.access [main] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@22cca101] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-05-15 08:46:05,895 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-15 08:46:07,161 INFO org.springframework.data.jpa.repository.query.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-15 08:46:12,913 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-15 08:46:14,269 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 4 endpoint(s) beneath base path '/actuator'
+2024-05-15 08:46:14,396 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@268bb09d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1780bc15, org.springframework.security.web.context.SecurityContextPersistenceFilter@5d852761, org.springframework.security.web.header.HeaderWriterFilter@46d8d38, org.springframework.security.web.authentication.logout.LogoutFilter@257ba195, ma.zs.GestionAgents.zynerator.security.jwt.AuthTokenFilter@5967492a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6e8fa647, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12eb281f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c2cc99f, org.springframework.security.web.session.SessionManagementFilter@e0865e7, org.springframework.security.web.access.ExceptionTranslationFilter@63c8a30e, org.springframework.security.web.access.intercept.AuthorizationFilter@7a696a6b]
+2024-05-15 08:46:15,891 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8036 (http) with context path ''
+2024-05-15 08:46:15,910 INFO ma.zs.GestionAgents.GestionAgentsApplication [main] Started GestionAgentsApplication in 65.035 seconds (process running for 93.133)
+2024-05-15 09:16:08,445 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s875ms146µs300ns).
+2024-05-15 09:16:44,240 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57s461ms829µs).
+2024-05-15 09:21:38,544 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8036-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-15 09:21:38,614 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8036-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-05-15 09:21:41,712 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8036-exec-1] Completed initialization in 3080 ms
+2024-05-15 09:57:00,256 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-15 09:57:02,874 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-05-15 09:57:03,519 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
